@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HeyCastle 🌷</title>
+    <title>HeyCastle</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Gift screen: unchanged -->
     <section id="gift-screen">
         <h1>A Little Surprise</h1>
         <p>Someone left something for you...</p>
@@ -20,35 +21,80 @@
     </section>
 
     <main id="main-content" class="hidden">
+
+        <!-- Header -->
         <header>
-            <h2>HeyCastle 🌷</h2>
+            <h2>HeyCastle</h2>
         </header>
 
+        <!-- Hero -->
         <section class="hero">
             <h1>Hey, Hello! 👋</h1>
             <p>A little corner of happiness, made just for you.</p>
         </section>
 
+        <!-- Birthday video -->
         <section class="birthday-video">
             <h2>A Little Birthday Surprise 🎁</h2>
-           <video id="birthdayVideo" controls autoplay playsinline preload="auto">
-               <source src="Hello-gift.mp4" type="video/mp4">
+            <video id="birthdayVideo" controls autoplay playsinline preload="auto">
+                <source src="Hello-gift.mp4" type="video/mp4">
                 Your browser does not support video playback.
             </video>
         </section>
 
+        <!-- Gallery -->
         <section class="gallery">
             <h2>A Little World of Beauty</h2>
+
             <div class="photos">
-                <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600" alt="Flowers">
-                <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=600" alt="Sunset">
-                <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=600" alt="Romantic moment">
+
+                <div class="gallery-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600"
+                        alt="Beautiful flowers"
+                        loading="lazy">
+                    <p>Pretty Things 🌸</p>
+                </div>
+
+                <div class="gallery-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=600"
+                        alt="Golden sunset"
+                        loading="lazy">
+                    <p>Golden Skies</p>
+                </div>
+
+                <div class="gallery-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600"
+                        alt="Beautiful landscape"
+                        loading="lazy">
+                    <p>Little Wonders</p>
+                </div>
+
+                <div class="gallery-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=600"
+                        alt="Cozy warm lights"
+                        loading="lazy">
+                    <p>Warm Moments</p>
+                </div>
+
             </div>
         </section>
 
-        <footer>Made with ♡ at HeyCastle</footer>
+        <!-- Final note -->
+        <section class="final-note">
+            <h2>One Last Little Note 💌</h2>
+            <p>
+                I hope this little corner brings a smile to your face.
+                Have a beautiful birthday!
+            </p>
+        </section>
+
     </main>
 
+    <!-- Welcome popup: unchanged -->
     <div id="welcome-popup" class="hidden">
         <div class="popup-card">
             <button class="close-button" onclick="closePopup()">×</button>
