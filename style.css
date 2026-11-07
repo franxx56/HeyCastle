@@ -109,17 +109,18 @@ footer {
 
 .popup-card {
     background: white;
-    border-radius: 25px;
-    padding: 35px 25px;
-    width: 100%;
-    max-width: 380px;
+    border-radius: 30px;
+    padding: 45px 30px;
+    width: 92%;
+    max-width: 480px;
+    min-height: 520px;
     position: relative;
-    box-shadow: 0 15px 50px rgba(0,0,0,0.15);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
 }
 
 .hero-image {
-    width: 160px;
-    height: 160px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
