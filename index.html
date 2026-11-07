@@ -1,50 +1,61 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HeyCastle</title>
+    <title>HeyCastle 🌷</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <h2>HeyCastle 🌷</h2>
-    </header>
+    <section id="gift-screen">
+        <h1>A Little Surprise</h1>
+        <p>Someone left something for you...</p>
 
-    <section class="hero">
-        <img
-            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600"
-            alt="Welcome character"
-            class="hero-image"
-        >
-
-        <h1>Hey, Hello! 👋</h1>
-
-        <p>A little corner of happiness, made just for you.</p>
-
-        <button onclick="sayHello()">Say Hello</button>
+        <button class="gift-button" onclick="openGift()">
+            <span>🎁</span>
+            <small>Tap to open</small>
+        </button>
     </section>
 
-    <section class="gallery">
-        <h2>A Little World of Beauty</h2>
+    <main id="main-content" class="hidden">
+        <header>
+            <h2>HeyCastle 🌷</h2>
+        </header>
 
-        <div class="photos">
-            <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600" alt="Flowers">
+        <section class="hero">
+            <h1>Hey, Hello! 👋</h1>
+            <p>A little corner of happiness, made just for you.</p>
+        </section>
 
-            <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=600" alt="Sunset">
+        <section class="gallery">
+            <h2>A Little World of Beauty</h2>
+            <div class="photos">
+                <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600" alt="Flowers">
+                <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=600" alt="Sunset">
+                <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=600" alt="Romantic moment">
+            </div>
+        </section>
 
-            <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=600" alt="Romantic moment">
+        <footer>Made with ♡ at HeyCastle</footer>
+    </main>
+
+    <div id="welcome-popup" class="hidden">
+        <div class="popup-card">
+            <button class="close-button" onclick="closePopup()">×</button>
+
+            <img
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600"
+                alt="Welcome character"
+                class="hero-image"
+            >
+
+            <h1>Hey, Hello! 👋</h1>
+            <p>A little surprise just for you.</p>
+            <button onclick="closePopup()">Let's Go ♡</button>
         </div>
-    </section>
-
-    <footer>
-        Made with ♡ at HeyCastle
-    </footer>
+    </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>
