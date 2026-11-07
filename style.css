@@ -111,6 +111,7 @@ footer {
 .popup-card {
     background: white;
     border-radius: 30px;
+    animation: popupEnter 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
     padding: 35px 25px;
     width: 92%;
     max-width: 480px;
@@ -169,4 +170,20 @@ footer {
     font-size: 28px;
     color: #876b77;
     cursor: pointer;
+}
+@keyframes popupEnter {
+    0% {
+        opacity: 0;
+        transform: scale(0.75) translateY(25px);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(1.04) translateY(-3px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
 }
