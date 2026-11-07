@@ -6,13 +6,18 @@ function openGift() {
     giftScreen.classList.add("hidden");
     popup.classList.remove("hidden");
 
-    // Restart the popup animation
-    popupCard.style.animation = "none";
-    void popupCard.offsetWidth;
-    popupCard.style.animation = "";
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            popupCard.classList.add("show");
+        });
+    });
 }
 
 function closePopup() {
-    document.getElementById("welcome-popup").classList.add("hidden");
+    const popup = document.getElementById("welcome-popup");
+
+    popup.classList.add("hidden");
+    popup.querySelector(".popup-card").classList.remove("show");
+
     document.getElementById("main-content").classList.remove("hidden");
 }
