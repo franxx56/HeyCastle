@@ -106,6 +106,7 @@ footer {
     align-items: center;
     padding: 20px;
     z-index: 10;
+    animation: backdropFade 0.65s ease both;
 }
 
 .popup-card {
@@ -185,5 +186,13 @@ footer {
     100% {
         opacity: 1;
         transform: scale(1) translateY(0);
+    }
+}
+@keyframes backdropFade {
+    from {
+        background: rgba(45, 25, 35, 0);
+    }
+    to {
+        background: rgba(45, 25, 35, 0.55);
     }
 }
